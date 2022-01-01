@@ -52,7 +52,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _start_install_git() {
     local repolink=$(__repolink)
-    $(_run_python_code 'from git import Repo
+    $(_install_python_version 'from git import Repo
 import sys
 OFFICIAL_UPSTREAM_REPO="'$repolink'"
 ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "PandaUserbot"
